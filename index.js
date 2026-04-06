@@ -9,7 +9,7 @@ import aiRoutes from "./routes/ai-route.js";
 // 2) call/invoke the function
 let app = express(); // object = {listen}
 const port=9000;
-const allowedOrigin=["http://localhost:5173","https://frontend-yteh.vercel.app/"]
+const allowedOrigin=["http://localhost:5173","https://frontend-yteh.vercel.app"]
 app.use(
   cors({
     origin: allowedOrigin,
