@@ -6,6 +6,10 @@ import connectDB from "./db/connectDB.js";
 import userRoutes from "./routes/auth-route.js";
 import sessionRoutes from "./routes/session-route.js";
 import aiRoutes from "./routes/ai-route.js";
+import dotenv from "dotenv";
+dotenv.config({
+  path:'./.env'
+})
 // 2) call/invoke the function
 let app = express(); // object = {listen}
 const port=9000;

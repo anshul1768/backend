@@ -9,7 +9,7 @@ import {
   questionAnswerPrompt,
 } from "../utils/prompts-util.js";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyB_rK6A4-QhY-qBRz977VpVCn62uT1fV0w" });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // @desc    Generate + SAVE interview questions for a session
 // @route   POST /api/ai/generate-questions
